@@ -1,0 +1,56 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+/*starte navbar*/
+.navbar-nav {
+  margin-left: 10px;
+}
+.navbar-brand > span {
+  font-size: 30px;
+}
+.navbar-brand span:first-child {
+  color: #d8d0cc;
+  font-weight: bold;
+ 
+}
+.navbar-brand span:last-child {
+  color: #aca495;
+}
+.navbar-nav .nav-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 15px;
+  color: yellow;
+  // font-weight: lighter;
+}  
+.navbar-nav .active > .nav-link {
+   color: blue !important;
+}
+
+.bg-light {
+  background-color: #f4f4f4 !important;
+  opacity: 10px;
+}
+
+img {
+  border: none;
+ }
+/*end navbar*/
+
+
+body {
+  // background-color: blue;
+background-image: url(.././img/coo.png);
+background-size: cover;
+}
+
+//form
+
+form {
+margin-top: 100px;
+  margin-left: 540px;
+}
