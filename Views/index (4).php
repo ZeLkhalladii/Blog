@@ -1,3 +1,10 @@
+<?php
+ // include_once 'includes/conect.php';
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,8 +26,8 @@
 
 </head>
 <body>
-   
-    
+
+
     <!--start navbar  -->
 
 
@@ -37,14 +44,14 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li>
+                        <a class="nav-link.active" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Se connecter</a>
+                        <a class="nav-link" href="seconnecter.php">Se connecter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">S'inscrire</a>
+                        <a class="nav-link" href="s'inscrire.php">S'inscrire</a>
                     </li>
                 </ul>
             </div>
@@ -53,12 +60,34 @@
 
     <!--End navbar  -->
 
-    <form action="action.php" method="post">
-        <p>Url_photo : <input type="text" name="image" /></p><br>
-        <p>Date : <input type="text" name="Date" /></p><br>
-        <p>Content : <input type="text" name="content" /></p><br>
-        <p><input type="submit" value="Poster"></p>
-       </form>
-       
+    <form action="sinscrire.php" method="post">
+        <p>fullname: <input type="text" name="fullname" /></p><br>
+        <p>email : <input type="text" name="email" /></p><br>
+        <p>password : <input type="password" name="password" /></p><br>
+        <input type="submit" value="s'inscrire">
+      </form>
+
+
+       <!-- <?php
+// if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+//
+//   $email = $_POST['email'];
+//   $username = $_POST['fullname'];
+//   $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+//
+//   try {
+//     // set the PDO error mode to exception
+//     $sql = "INSERT INTO user (email, username, password) VALUES ('$email', '$username', '$password')";
+//     // use exec() because no results are returned
+//     $conn->exec($sql);
+//     echo "New user registred created successfully";
+//   } catch(PDOException $e) {
+//     echo $sql . "<br>" . $e->getMessage();
+//   }
+//
+//   $conn = null;
+// }
+?> -->
+
 </body>
 </html>

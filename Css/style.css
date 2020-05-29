@@ -31,7 +31,7 @@
   color: yellow;
 }
 
-.navbar-nav .active > .nav-link {
+.navbar-nav > .nav-link.active {
   color: blue !important;
 }
 

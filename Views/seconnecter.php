@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S'inscrire</title>
+    <title>SE connecter</title>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -36,14 +37,14 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li>
+                    <a class="nav-link" href="index.php">Home </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Se connecter</a>
+                        <a class="nav-link.active" href="seconnecter.php">Se connecter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">S'inscrire</a>
+                        <a class="nav-link" href="s'inscrire.php">S'inscrire</a>
                     </li>
                 </ul>
             </div>
@@ -52,13 +53,13 @@
 
     <!--End navbar  -->
 
+   <!-- start formulaire -->
     
-   <form action="action.php" method="post">
-    <p>User_Name : <input type="text" name="nom" /></p>
-    <p>Password : <input type="text" name="Password" /></p>
-    <p>Confirmed Password : <input type="text" name="confipass" /></p>
-    <p>Url_photo : <input type="text" name="image" /></p>
-    <p><input type="submit" value="S'inscrire"></p>
+
+   <form action="login.php" method="post">
+    <p>email : <input type="text" name="email" /></p><br>
+    <p>Password : <input type="password" name="password" /></p><br>
+    <p><input type="submit" value="Se connecter"></p>
    </form>
 
 
