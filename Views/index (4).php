@@ -45,14 +45,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li>
-                        <a class="nav-link.active" href="index.php">Home</a>
+                        <a class="nav-link.active" href="index (4).php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="seconnecter.php">Se connecter</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="s'inscrire.php">S'inscrire</a>
-                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="index (4).php">Sinscrire</a>
+                    </li> -->
                 </ul>
             </div>
         </div>

@@ -37,5 +37,5 @@
       $connection->__construct()->close();
 
       // Redirect to
-      // header("Location: posts.php");
+      header("Location: posts.php");
 ?>

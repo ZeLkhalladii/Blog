@@ -41,10 +41,13 @@
                 $_SESSION['username'] = $row['fullname'];
                 $_SESSION['email'] = $row['email'];
 
-                echo "Login";
+                // echo "Login";
 
                 // Redirect to posts page
-                // header("Location: posts.php");
+                header("Location: posts.php");
+            } else{
+                header("Location: seconnecter.php");
+
             }
         }
     }else{
@@ -56,11 +59,11 @@
         $_SESSION['signin_errors'] = $error;
 
         // Redirect to home page
-        // header("Location: ../index.php");
-        echo "not Login";
+        header("Location: seconnecter.php");
+        // echo "not Login";
     }
 
     // close connection
-    // $connection->construct()->close();
+    $connection->construct()->close();
 
 ?>
